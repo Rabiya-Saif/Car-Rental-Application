@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Car App</string>
+    <string name="app_btn"><html><font size="50">This is some text!</font></html>Check Car</string>
+    <string name="app_details">I agree to the <font color="#2196F3"><u>general terms and conditions </u></font> and <font color="#2196F3"><u>car check guidelines</u></font> of KAYANK </string>
+    <string name="app_final">Instructions:How do I do a <font color="#2196F3"><u>Car-Check?</u></font></string>
+    <string name="terms"><font color="#000000">Do you aggree to our </font><font color="#2196F3">Terms and conditions</font><font color="#000000">. Allow term and conditions to continue</font></string>
+
+</resources>

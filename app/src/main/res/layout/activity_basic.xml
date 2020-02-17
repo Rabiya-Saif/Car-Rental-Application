@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BasicActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Car Check"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Car Check"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_name" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/_5sdp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#fed500"
+        android:id="@+id/btn_checkcar"
+        android:layout_height="@dimen/_90sdp">
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="New Car Check"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/_2sdp"
+            android:textSize="@dimen/_18sdp"
+            android:drawableLeft="@drawable/ic_add_black_24dp"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_centerInParent="true"
+            android:background="@drawable/lineborder"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_5sdp" />
+    </RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        android:visibility="gone"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent" />
+</RelativeLayout>
