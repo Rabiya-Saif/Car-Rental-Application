@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.TyreCheckActivity">
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.v7.widget.Toolbar
+           android:id="@+id/toolbar"
+           android:layout_width="match_parent"
+           android:textAlignment="center"
+           android:layout_height="?attr/actionBarSize">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="Car Check"
+               android:textSize="@dimen/_18sdp"
+               android:textColor="#000"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:id="@+id/toolbar_title" />
+       </android.support.v7.widget.Toolbar>
+       <TextView
+           android:paddingLeft="@dimen/_25sdp"
+           android:text="Mileage"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <EditText
+           android:inputType="number"
+           android:id="@+id/edit_kilometer"
+           android:paddingTop="@dimen/_5sdp"
+           android:paddingBottom="@dimen/_5sdp"
+           android:background="@drawable/simplewhiteshape"
+           android:layout_margin="@dimen/_5sdp"
+           android:textSize="@dimen/_14sdp"
+           android:hint="20.00"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <View
+           android:background="#CFCFCF"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_1sdp" />
+       <Switch
+           android:layout_marginLeft="@dimen/_5sdp"
+           android:layout_marginRight="@dimen/_5sdp"
+           android:textSize="@dimen/_18sdp"
+           android:text="Service/Inspection"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_50sdp" />
+       <TextView
+           android:layout_marginTop="@dimen/_15sdp"
+           android:paddingLeft="@dimen/_25sdp"
+           android:text="TIRE CHECK"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <LinearLayout
+           android:layout_marginTop="@dimen/_15sdp"
+            android:weightSum="3"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_160sdp">
+           <LinearLayout
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent">
+               <TextView
+                   android:text="V. left"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:id="@+id/image_onevlinks_cross"
+                           android:scaleType="center"
+                           android:src="@drawable/cross"
+                           android:layout_width="@dimen/_40sdp"
+                           android:layout_height="match_parent" />
+                       <ImageView
+                           android:id="@+id/image_onevlinks_tick"
+                           android:scaleType="center"
+                           android:src="@drawable/ic_check_circle_black_24dp"
+                           android:layout_width="@dimen/_40sdp"
+                           android:layout_height="@dimen/_40sdp" />
+               </LinearLayout>
+               <TextView
+                   android:layout_marginTop="@dimen/_5sdp"
+                   android:text="H. left"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/image_twohlink_cross"
+                       android:scaleType="center"
+                       android:src="@drawable/cross"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+                   <ImageView
+                       android:id="@+id/image_twohlink_tick"
+                       android:scaleType="center"
+                       android:src="@drawable/ic_check_circle_black_24dp"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+               </LinearLayout>
+               <!--<TextView
+                   android:layout_marginTop="@dimen/_30sdp"
+                   android:text="H. links"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:drawableLeft="@drawable/cross"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <Space
+                       android:layout_width="@dimen/_10sdp"
+                       android:layout_height="@dimen/_1sdp" />
+                   <TextView
+                       android:background="@drawable/round"
+                       android:drawableLeft="@drawable/ic_check_white_24dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>-->
+           </LinearLayout>
+           <ImageView
+               android:paddingTop="@dimen/_15sdp"
+               android:paddingBottom="@dimen/_5sdp"
+               android:scaleType="fitXY"
+               android:src="@drawable/carfull"
+               android:layout_weight="1"
+               android:layout_width="@dimen/_15sdp"
+               android:layout_height="match_parent" />
+           <LinearLayout
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent">
+               <TextView
+                   android:text="V. right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_15sdp"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/image_onevrecht_cross"
+                       android:scaleType="center"
+                       android:src="@drawable/cross"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+                   <ImageView
+                       android:id="@+id/image_onevrect_tick"
+                       android:scaleType="center"
+                       android:src="@drawable/ic_check_circle_black_24dp"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+               </LinearLayout>
+               <TextView
+                   android:layout_marginTop="@dimen/_5sdp"
+                   android:text="H. right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:id="@+id/image_twohrect_cross"
+                       android:scaleType="center"
+                       android:src="@drawable/cross"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+                   <ImageView
+                       android:id="@+id/image_twohrect_tick"
+                       android:scaleType="center"
+                       android:src="@drawable/ic_check_circle_black_24dp"
+                       android:layout_width="@dimen/_40sdp"
+                       android:layout_height="@dimen/_40sdp" />
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+   </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textColor="#000"
+            android:text="Comments (Optional)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_comment"
+            android:background="@drawable/simplewhiteshape"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:paddingBottom="@dimen/_15sdp"
+            android:background="#CFCFCF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#093558"
+        android:id="@+id/btn_checkcar"
+        android:layout_height="@dimen/_90sdp">
+
+
+        <TextView
+            android:id="@+id/btn_opencamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:background="#093558"
+            android:text="Submit"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_125sdp"
+            android:layout_marginBottom="38dp"
+            android:textColor="#ffff"  />
+        <View
+            android:layout_centerInParent="true"
+            android:background="@drawable/lineborderwhite"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_5sdp" />
+    </RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        android:visibility="gone"
+        style="@style/SpinKitView.Large.FoldingCube"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent" />
+</RelativeLayout>
